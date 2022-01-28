@@ -44,7 +44,6 @@ document.getElementById("maker").addEventListener("click", () => {
         return;
       }
       e.style.backgroundColor = "transparent";
-
     });
   });
   document.getElementById("erase").addEventListener("click", () => {
@@ -92,7 +91,7 @@ document.getElementById("creater").addEventListener("click", () => {
       window.getComputedStyle(document.body).getPropertyValue("--columns");
     index++
   ) {
-    loda += `<div class="box"></div>`;
+    loda += `<div class="box box${index + 1}"></div>`;
   }
   document.getElementById("gas").innerText = `<div class="cont">${loda}</div>`;
   document.getElementById("sass").innerText = str;
